@@ -1,0 +1,10 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox spacing="20" alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.CandidateController" styleClass="root">
+      <Button text="← Back" onAction="#goBack"/>
+    <Label text="Candidate Management" styleClass="title"/>
+    <TextField fx:id="candidateNameField" promptText="Candidate Name"/>
+    <Button fx:id="addButton" text="Add Candidate"/>
+    <ListView fx:id="candidateListView" prefHeight="200"/>
+</VBox>

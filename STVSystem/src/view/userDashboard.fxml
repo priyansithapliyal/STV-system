@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox spacing="25"
+      alignment="CENTER"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.UserDashboardController"
+      styleClass="root">
+
+    <Label text="User Dashboard"
+           styleClass="title"/>
+
+    <HBox spacing="25"
+           alignment="CENTER">
+
+        <!-- CAST VOTE -->
+        <VBox fx:id="voteCard"
+              alignment="CENTER"
+              spacing="10"
+              styleClass="dashboard-card">
+
+            <Label text="🗳"
+                   style="-fx-font-size: 40px;"/>
+
+            <Label text="Cast Vote"
+                   styleClass="card-heading"/>
+
+            <Label text="Submit your ranked ballot"
+                   styleClass="card-subtext"/>
+        </VBox>
+
+        <!-- VIEW RESULT -->
+        <VBox fx:id="resultCard"
+              alignment="CENTER"
+              spacing="10"
+              styleClass="dashboard-card">
+
+            <Label text="📊"
+                   style="-fx-font-size: 40px;"/>
+
+            <Label text="View Results"
+                   styleClass="card-heading"/>
+
+            <Label text="Check election winners"
+                   styleClass="card-subtext"/>
+        </VBox>
+
+    </HBox>
+
+</VBox>

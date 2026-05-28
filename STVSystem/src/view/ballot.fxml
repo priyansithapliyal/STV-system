@@ -1,0 +1,14 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+
+<VBox spacing="20" alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.BallotController" styleClass="root">
+      <Button text="← Back" onAction="#goBack"/>
+    <Label text="Ballot Entry" styleClass="title"/>
+    <ComboBox fx:id="firstPref" promptText="First Preference"/>
+    <ComboBox fx:id="secondPref" promptText="Second Preference"/>
+    <ComboBox fx:id="thirdPref" promptText="Third Preference"/>
+    <Button fx:id="submitButton" text="Submit Ballot"/>
+    <ListView fx:id="ballotListView" prefHeight="200"/>
+</VBox>

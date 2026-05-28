@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/21"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="controller.LoginController"
+           styleClass="root">
+
+    <!-- LOGIN CARD -->
+    <VBox spacing="18"
+          alignment="CENTER"
+          styleClass="login-card">
+
+        <!-- TITLE -->
+        <Label text="STV Election System"
+               styleClass="login-title"/>
+
+        <Label text="Secure Voting Platform"
+               styleClass="login-subtitle"/>
+
+        <!-- USERNAME -->
+        <TextField fx:id="usernameField"
+                   promptText="Enter Username"
+                   styleClass="input-field"/>
+
+        <!-- PASSWORD -->
+        <PasswordField fx:id="passwordField"
+                       promptText="Enter Password"
+                       styleClass="input-field"/>
+
+        <!-- VISIBLE PASSWORD -->
+        <TextField fx:id="visiblePasswordField"
+                   promptText="Enter Password"
+                   visible="false"
+                   managed="false"
+                   styleClass="input-field"/>
+
+        <!-- SHOW PASSWORD -->
+        <CheckBox fx:id="showPasswordCheckBox"
+                  text="Show Password"
+                  styleClass="checkbox"/>
+
+        <!-- LOGIN BUTTON -->
+        <Button fx:id="loginButton"
+                text="LOGIN"
+                styleClass="login-button"/>
+
+    </VBox>
+
+</StackPane>

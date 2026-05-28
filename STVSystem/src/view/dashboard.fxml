@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox spacing="40"
+      alignment="CENTER"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.DashboardController"
+      styleClass="root">
+
+    <!-- TITLE -->
+    <Label text="STV Election Dashboard"
+           styleClass="dashboard-title"/>
+
+    <!-- CARDS -->
+    <HBox spacing="30" alignment="CENTER">
+
+        <!-- ADD CANDIDATE -->
+        <VBox fx:id="addCandidateCard"
+      alignment="CENTER"
+      spacing="10"
+      styleClass="dashboard-card">
+
+    <Label text="Candidates"
+           styleClass="card-heading"/>
+
+    <Label text="Add and manage election candidates"
+           styleClass="card-subtext"/>
+
+</VBox>
+
+        <!-- ADD BALLOT -->
+        <VBox fx:id="addBallotCard"
+      alignment="CENTER"
+      spacing="10"
+      styleClass="dashboard-card">
+
+    <Label text="Ballots"
+           styleClass="card-heading"/>
+
+    <Label text="Submit ranked preference votes"
+           styleClass="card-subtext"/>
+
+</VBox>
+
+        <!-- VIEW RESULT -->
+        <VBox fx:id="viewResultCard"
+      alignment="CENTER"
+      spacing="10"
+      styleClass="dashboard-card">
+
+    <Label text="Results"
+           styleClass="card-heading"/>
+
+    <Label text="View STV election results"
+           styleClass="card-subtext"/>
+
+</VBox>
+    </HBox>
+
+</VBox>
